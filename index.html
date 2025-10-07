@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+<body>
+
+<div class="flex-container"  id="contactForm">
+    <h1 id="rForm">Registration-Form</h1>
+    <form id="form">
+        <div id="firstName">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+        </div>
+        <div id="lastName">
+            <label for="lastName"   class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+         </div> 
+         <div id="checkbox">
+             <label for="interestBox" id="interestBox "form-label">Select Interest:</label>
+            <!-- <input type="" class="form-control" id="interestBox" required> -->
+            <input type="checkbox" id="employment" name="employment" value="Candidate">
+            <label for="choice1"> Employment</label><br>
+            <input type="checkbox" id="partnership" name="partnership" value="B2B">
+             <label for="choice2"> Partnerships</label><br>
+            <input type="checkbox" id="donations" name="donations" value="Donate">
+            <label for="choice3"> Donations</label> 
+         </div>
+         <div id="emailInfo">
+            <label for="emailInfo" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailInfo" required>
+         </div>
+         <div id="dateOfBirth">
+             <label for="birthDate" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="birthDate" placeholder="YYYY-MM-DD">
+         </div>
+         <div id="userName">
+             <label for="userName" class="form-label">User Name</label>
+            <input type="text" class="form-control" id="userName" placeholder="Enter User Name" required>
+            </div>
+        <div id="password" >
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
+        </div>
+        <div id="messageMe">
+            <label for="comments" class="form-label">Message Here</label>
+            <textarea class="form-control" id="comments" rows="3" required>
+            </textarea>
+        </div>
+        <div id="submitButton">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        </div>
+         </div>  
+    </form>
+</div>
+<script src="./contact.js"></script>
+</body>
+</html>
